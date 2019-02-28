@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title>Dashboard</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
+
+        <link rel="stylesheet" href="main.css">
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-custom bg-light">
+
+            <a class="navbar-brand" href="index.html"><h2 class="nav-title">Latitude Analysis</h2></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+
+            <i class="material-icons">menu</i>
+
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                            Plots
+
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+                            <a class="dropdown-item" href="temperature.html">Temperature</a>
+
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+
+                            <a class="dropdown-item" href="wind.html">Wind Speed</a>
+
+                        </div>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="comparison.html">Comparison</a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="data.html">Data</a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <hr>
+
+        <div class="big-container">
+
+            <div class="row">
+
+                <div class="col-lg-7 col-md-12">
+
+                    <h1 class="display-5">Cloudiness</h1>
+
+                    <img class="img-fluid" src="assets/images/cloudiness_by_latitude.png" alt="temperature">
+
+                    <p class="lead">Cloudiness seems to be independent of latitude.</p>
+
+                    <p>I assume that the distribution pattern seen here is due to the method used in measuring and quantifying cloudiness.</p>
+
+                </div>
+
+                <div class="col-lg-5 col-md-12">
+
+                    <h1 class="display-5">Visualizations</h1>
+
+                    <div class="row">
+
+                        <div class="vis-thumb col-lg-6 col-3">
+
+                            <a href="temperature.html"><img class="img-fluid" src="assets/images/temperature(f)_by_latitude.png"></a>
+
+                        </div>
+
+                        <div class="vis-thumb col-lg-6 col-3">
+
+                            <a href="humidity.html"><img class="img-fluid" src="assets/images/humidity_by_latitude.png"></a>
+
+                        </div>
+
+                        <div class="vis-thumb col-lg-6 col-3">
+
+                            <a href="cloudiness.html"><img class="img-fluid selection" src="assets/images/cloudiness_by_latitude.png"></a>
+
+                        </div>
+
+                        <div class="vis-thumb col-lg-6 col-3">
+
+                            <a href="wind.html"><img class="img-fluid" src="assets/images/wind speed(mph)_by_latitude.png"></a>
+
+                        </div>
+
+                    </div>
+
+                    <p class="text-right">click any plot to get an in depth analysis</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
